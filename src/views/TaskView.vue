@@ -1,7 +1,7 @@
 <template>
   <div class="Add">
     <h1>Task List</h1>
-    <div class="task">    
+    <div class="task">
       <div class="tasks" v-for="task in tasks" :key="task">
       <p>{{ task.name }}<router-link :to="'/update/'+task.id"><button class="button"></button></router-link></p>
       </div>
@@ -42,7 +42,7 @@ import axios from 'axios'
 }
 #blog {
   top: 80px;
-  background-color: #2196F3;
+  background-color: greenyellow;
 }
 #mySidenav a:hover {
   left: 0;
