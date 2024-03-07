@@ -42,7 +42,7 @@ import axios from 'axios'
 }
 #blog {
   top: 80px;
-  background-color: greenyellow;
+  background-color: #2196F3;
 }
 #mySidenav a:hover {
   left: 0;
