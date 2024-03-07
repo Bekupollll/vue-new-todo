@@ -3,7 +3,7 @@
     <h1>Task List</h1>
     <div class="task">
       <div class="tasks" v-for="task in tasks" :key="task">
-      <p>{{ task.name }}<router-link :to="'/update/'+task.id"><button class="button"></button></router-link></p>
+      <p>{{ task.name }}<router-link :to="'/update/'+task.id"><i class="fa-solid fa-pen " id="big_icon"></i></router-link></p>
       </div>
     </div>
     <router-link to="/add"><i class="fa-solid fa-plus" id="icon"></i></router-link>
@@ -39,6 +39,9 @@ import axios from 'axios'
   font-size: 20px;
   color: white;
   border-radius: 0 5px 5px 0;
+}
+#big_icon{
+color: crimson;
 }
 #blog {
   top: 80px;
